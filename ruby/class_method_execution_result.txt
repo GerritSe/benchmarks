@@ -9,24 +9,24 @@ thread_count: 8
 Ruby version: 3.1.0-p0
 
 Warming up --------------------------------------
-             regular     1.809M i/100ms
-          class_eval     1.779M i/100ms
-          class_exec     1.792M i/100ms
-          eigenclass     1.785M i/100ms
+             regular     1.795M i/100ms
+          class_eval     1.478M i/100ms
+          class_exec     1.650M i/100ms
+          eigenclass     1.819M i/100ms
 define_singleton_method
-                         1.353M i/100ms
+                         1.361M i/100ms
 Calculating -------------------------------------
-             regular     18.121M (± 1.0%) i/s -     92.248M in   5.091289s
-          class_eval     17.889M (± 1.2%) i/s -     90.748M in   5.073559s
-          class_exec     18.002M (± 0.9%) i/s -     91.368M in   5.075890s
-          eigenclass     17.879M (± 0.8%) i/s -     91.037M in   5.092167s
+             regular     17.842M (± 1.8%) i/s -    179.489M in  10.063457s
+          class_eval     17.604M (± 2.6%) i/s -    177.335M in  10.081020s
+          class_exec     17.710M (± 2.2%) i/s -    178.182M in  10.066375s
+          eigenclass     17.867M (± 1.3%) i/s -    180.076M in  10.080409s
 define_singleton_method
-                         13.344M (± 0.4%) i/s -     67.668M in   5.071247s
+                         13.357M (± 0.5%) i/s -    134.782M in  10.090747s
 
 Comparison:
-             regular: 18120688.8 i/s
-          class_exec: 18001822.0 i/s - same-ish: difference falls within error
-          class_eval: 17889002.6 i/s - same-ish: difference falls within error
-          eigenclass: 17878913.7 i/s - same-ish: difference falls within error
-define_singleton_method: 13343639.1 i/s - 1.36x  (± 0.00) slower
+          eigenclass: 17867008.1 i/s
+             regular: 17842136.8 i/s - same-ish: difference falls within error
+          class_exec: 17710235.6 i/s - same-ish: difference falls within error
+          class_eval: 17603964.3 i/s - same-ish: difference falls within error
+define_singleton_method: 13357320.4 i/s - 1.34x  (± 0.00) slower
 

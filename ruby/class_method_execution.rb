@@ -31,6 +31,8 @@ class DefineSingletonMethod
 end
 
 Benchmark.ips do |bm|
+  bm.time = 10
+
   bm.report("regular") do
     Regular.some_method
   end

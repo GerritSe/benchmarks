@@ -4,28 +4,23 @@ require_relative "lib/system_info"
 
 SystemInfo.print
 
-PROC_KEYWORD = proc {}
-PROC_CONSTRUCTOR = Proc.new {}
-LAMBDA = lambda {}
-LAMBDA_LITERAL = -> {}
-
 Benchmark.ips do |bm|
   bm.time = 10
 
   bm.report("proc_keyword") do
-    PROC_KEYWORD.call
+    proc {}.call
   end
 
   bm.report("proc_constructor") do
-    PROC_CONSTRUCTOR.call
+    Proc.new {}.call
   end
 
   bm.report("lambda") do
-    LAMBDA.call
+    lambda {}.call
   end
 
   bm.report("lambda_literal") do
-    LAMBDA_LITERAL.call
+    -> {}.call
   end
 
   bm.compare!

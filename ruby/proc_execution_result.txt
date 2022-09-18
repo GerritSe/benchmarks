@@ -9,19 +9,19 @@ thread_count: 8
 Ruby version: 3.1.0-p0
 
 Warming up --------------------------------------
-        proc_keyword   383.182k i/100ms
-    proc_constructor   367.631k i/100ms
-              lambda   376.304k i/100ms
-      lambda_literal   408.211k i/100ms
+        proc_keyword     1.616M i/100ms
+    proc_constructor     1.591M i/100ms
+              lambda     1.579M i/100ms
+      lambda_literal     1.617M i/100ms
 Calculating -------------------------------------
-        proc_keyword      3.956M (± 2.1%) i/s -     39.851M in  10.078088s
-    proc_constructor      3.576M (± 2.5%) i/s -     36.028M in  10.080160s
-              lambda      3.977M (± 1.0%) i/s -     39.888M in  10.030003s
-      lambda_literal      3.831M (± 5.7%) i/s -     38.372M in  10.057110s
+        proc_keyword     16.012M (± 3.3%) i/s -    160.028M in  10.006287s
+    proc_constructor     16.095M (± 0.9%) i/s -    162.330M in  10.086578s
+              lambda     16.089M (± 1.0%) i/s -    161.049M in  10.010939s
+      lambda_literal     16.274M (± 0.5%) i/s -    163.279M in  10.033155s
 
 Comparison:
-              lambda:  3977277.4 i/s
-        proc_keyword:  3956008.9 i/s - same-ish: difference falls within error
-      lambda_literal:  3831132.9 i/s - same-ish: difference falls within error
-    proc_constructor:  3576453.0 i/s - 1.11x  (± 0.00) slower
+      lambda_literal: 16274252.5 i/s
+    proc_constructor: 16095085.5 i/s - same-ish: difference falls within error
+              lambda: 16089137.5 i/s - same-ish: difference falls within error
+        proc_keyword: 16012075.3 i/s - same-ish: difference falls within error
 

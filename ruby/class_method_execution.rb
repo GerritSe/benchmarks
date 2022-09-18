@@ -1,5 +1,8 @@
 require "benchmark/ips"
 require_relative "lib/capture_stdout"
+require_relative "lib/system_info"
+
+SystemInfo.print
 
 class Regular
   def self.some_method; end

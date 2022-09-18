@@ -1,9 +1,9 @@
 # Benchmarks
 
-Collection of benchmarks and their respective results run on an M1 8 Core MacBook Air.
+Collection of benchmarks and their respective results.
 
-## Usage
+## Prequisites
 
 ### Ruby
 
-Install the `benchmark-ips` gem in order to run the benchmarks.
+Install the `benchmark-ips` gem.

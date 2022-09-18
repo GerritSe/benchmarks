@@ -1,22 +1,32 @@
+Machine:
+
+brand_string: Apple M1
+core_count: 8
+cores_per_package: 8
+logical_per_package: 8
+thread_count: 8
+
+Ruby version: 3.1.0-p0
+
 Warming up --------------------------------------
-             regular     1.840M i/100ms
-          class_eval     1.824M i/100ms
-          class_exec     1.824M i/100ms
-          eigenclass     1.830M i/100ms
+             regular     1.809M i/100ms
+          class_eval     1.779M i/100ms
+          class_exec     1.792M i/100ms
+          eigenclass     1.785M i/100ms
 define_singleton_method
                          1.353M i/100ms
 Calculating -------------------------------------
-             regular     18.611M (± 0.4%) i/s -     93.823M in   5.041268s
-          class_eval     18.431M (± 0.4%) i/s -     93.045M in   5.048364s
-          class_exec     18.368M (± 0.7%) i/s -     93.010M in   5.063941s
-          eigenclass     18.340M (± 0.3%) i/s -     93.313M in   5.087863s
+             regular     18.121M (± 1.0%) i/s -     92.248M in   5.091289s
+          class_eval     17.889M (± 1.2%) i/s -     90.748M in   5.073559s
+          class_exec     18.002M (± 0.9%) i/s -     91.368M in   5.075890s
+          eigenclass     17.879M (± 0.8%) i/s -     91.037M in   5.092167s
 define_singleton_method
-                         13.461M (± 0.7%) i/s -     67.670M in   5.027250s
+                         13.344M (± 0.4%) i/s -     67.668M in   5.071247s
 
 Comparison:
-             regular: 18611256.7 i/s
-          class_eval: 18430948.8 i/s - 1.01x  (± 0.00) slower
-          class_exec: 18367986.3 i/s - 1.01x  (± 0.00) slower
-          eigenclass: 18340488.3 i/s - 1.01x  (± 0.00) slower
-define_singleton_method: 13461238.4 i/s - 1.38x  (± 0.00) slower
+             regular: 18120688.8 i/s
+          class_exec: 18001822.0 i/s - same-ish: difference falls within error
+          class_eval: 17889002.6 i/s - same-ish: difference falls within error
+          eigenclass: 17878913.7 i/s - same-ish: difference falls within error
+define_singleton_method: 13343639.1 i/s - 1.36x  (± 0.00) slower
 

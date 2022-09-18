@@ -1,0 +1,22 @@
+Warming up --------------------------------------
+             regular     1.840M i/100ms
+          class_eval     1.824M i/100ms
+          class_exec     1.824M i/100ms
+          eigenclass     1.830M i/100ms
+define_singleton_method
+                         1.353M i/100ms
+Calculating -------------------------------------
+             regular     18.611M (± 0.4%) i/s -     93.823M in   5.041268s
+          class_eval     18.431M (± 0.4%) i/s -     93.045M in   5.048364s
+          class_exec     18.368M (± 0.7%) i/s -     93.010M in   5.063941s
+          eigenclass     18.340M (± 0.3%) i/s -     93.313M in   5.087863s
+define_singleton_method
+                         13.461M (± 0.7%) i/s -     67.670M in   5.027250s
+
+Comparison:
+             regular: 18611256.7 i/s
+          class_eval: 18430948.8 i/s - 1.01x  (± 0.00) slower
+          class_exec: 18367986.3 i/s - 1.01x  (± 0.00) slower
+          eigenclass: 18340488.3 i/s - 1.01x  (± 0.00) slower
+define_singleton_method: 13461238.4 i/s - 1.38x  (± 0.00) slower
+

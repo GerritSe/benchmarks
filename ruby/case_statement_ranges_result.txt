@@ -1,0 +1,30 @@
+Machine:
+
+cores_per_package: 8
+core_count: 8
+logical_per_package: 8
+thread_count: 8
+brand_string: Apple M1
+
+Ruby version: 3.1.0-p0
+
+Warming up --------------------------------------
+range check via inline proc
+                       148.880k i/100ms
+range check via predefined proc
+                       579.987k i/100ms
+range check via actual range
+                       393.631k i/100ms
+Calculating -------------------------------------
+range check via inline proc
+                          1.449M (± 2.3%) i/s -     14.590M in  10.074155s
+range check via predefined proc
+                          5.798M (± 0.4%) i/s -     57.999M in  10.003756s
+range check via actual range
+                          3.935M (± 0.2%) i/s -     39.363M in  10.004209s
+
+Comparison:
+range check via predefined proc:  5797810.1 i/s
+range check via actual range:  3934675.9 i/s - 1.47x  (± 0.00) slower
+range check via inline proc:  1449075.9 i/s - 4.00x  (± 0.00) slower
+
